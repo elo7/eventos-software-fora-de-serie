@@ -1,0 +1,129 @@
+@font-face {
+	font-family:museo_sans;
+	src:url(//images.elo7.com.br/assets/v3/fonts/museo-sans-300-webfont.eot);
+	src:url(//images.elo7.com.br/assets/v3/fonts/museo-sans-300-webfont.eot?#iefix) format("embedded-opentype"),
+		url(//images.elo7.com.br/assets/v3/fonts/museo-sans-300-webfont.woff2) format("woff2"),
+		url(//images.elo7.com.br/assets/v3/fonts/museo-sans-300-webfont.woff) format("woff"),
+		url(//images.elo7.com.br/assets/v3/fonts/museo-sans-300-webfont.ttf) format("truetype"),
+		url(//images.elo7.com.br/assets/v3/fonts/museo-sans-300-webfont.svg#museo_sans300) format("svg");
+	font-weight:300;
+	font-style:normal
+}
+
+* {
+	color: inherit;
+	box-sizing: border-box;
+	font-family: "museo_sans", sans-serif;
+	font-style: normal;
+	font-weight: inherit;
+	text-decoration: none;
+}
+
+body {
+	color: #7d7873;
+	font-size: 1em;
+	font-weight: 300;
+}
+
+.menu {
+	background-color: #333333;
+	color: #F7F4F0;
+	font-size: 0.75em;
+	padding-bottom: 1em;
+	padding-top: 1em;
+}
+
+.secao-link {
+	display: inline-block;
+	margin-right: 1.5em;
+	text-shadow: 1px 1px 2px #524947;
+}
+
+.container {
+	max-width: 1080px;
+	margin: 0 auto;
+	padding-left: 4%;
+	padding-right: 4%;
+}
+
+.chamada {
+	background-image: url('/imagens/cover.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% auto;
+	color: #F7F4F0;
+	font-size: 1.75em;
+	text-align: center;
+	padding-bottom: 2em;
+	padding-top: 2em;
+	position: relative;
+	text-shadow: 1px 1px 1px #333333;
+	text-transform: uppercase;
+}
+
+.texto-chamada {
+	display: block;
+	font-size: 0.66em;
+}
+
+.dia {
+	margin-top: 0.75em;
+}
+
+.horario {
+	text-transform: lowercase;
+}
+
+.local {
+	font-size: 0.5em;
+	margin-top: 0.5em;
+}
+
+.inscricao {
+	border: 2px solid white;
+	border-radius: 5em;
+	color: #F7F4F0;
+	display: block;
+	font-size: 0.5em;
+	font-weight: 300;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2.5em;
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+	text-transform: none;
+	width: 10em;
+}
+
+.inscricao:hover {
+	background-color: rgba(53,156,156, 0.8);
+}
+
+.licenca {
+	bottom: 1em;
+	color: #c1c1c1;
+	font-size: 0.1em;
+	font-weight: 300;
+	position: absolute;
+	right: 1em;
+	text-transform: none;
+}
+
+.secao {
+	padding-bottom: 1em;
+	padding-top: 1em;
+}
+
+.titulo {
+	color: #333333;
+	font-size: 1.5em;
+	margin-bottom: 0.5em;
+}
+
+.descricao {
+	line-height: 1.5;
+}
+
+.elo7 {
+	color: #fdb933;
+}
