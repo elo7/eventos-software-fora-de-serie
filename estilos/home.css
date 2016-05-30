@@ -25,6 +25,10 @@ body {
 	font-weight: 300;
 }
 
+p + p {
+	margin-top: 1em;
+}
+
 .menu, .rodape {
 	padding-bottom: 1em;
 	padding-top: 1em;
@@ -54,7 +58,8 @@ body {
 
 .container {
 	max-width: 1200px;
-	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
 	padding-left: 4%;
 	padding-right: 4%;
 }
