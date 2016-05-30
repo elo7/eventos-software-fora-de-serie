@@ -25,22 +25,35 @@ body {
 	font-weight: 300;
 }
 
-.menu {
-	background-color: #333333;
-	color: #F7F4F0;
-	font-size: 0.75em;
+.menu, .rodape {
 	padding-bottom: 1em;
 	padding-top: 1em;
 }
 
+.menu {
+	border-top: 2px solid #fdb933;
+	color: #359c9c;
+	overflow: auto;
+}
+
+.rodape {
+	background-color: #ebebea;
+	border-top: 1px solid #dadada;
+}
+
+.cabecalho {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
 .secao-link {
 	display: inline-block;
-	margin-right: 1.5em;
-	text-shadow: 1px 1px 2px #524947;
+	margin-left: 1em;
 }
 
 .container {
-	max-width: 1080px;
+	max-width: 1200px;
 	margin: 0 auto;
 	padding-left: 4%;
 	padding-right: 4%;
@@ -50,12 +63,12 @@ body {
 	background-image: url('/imagens/cover.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 100% auto;
+	background-size: cover;
 	color: #F7F4F0;
 	font-size: 1.75em;
 	text-align: center;
-	padding-bottom: 2em;
-	padding-top: 2em;
+	padding-bottom: 1.5em;
+	padding-top: 1.5em;
 	position: relative;
 	text-shadow: 1px 1px 1px #333333;
 	text-transform: uppercase;
@@ -114,6 +127,108 @@ body {
 	padding-top: 1em;
 }
 
+#agenda {
+	background-color: #f8f8f8;
+}
+
+.palestra {
+	align-items: center;
+	display: flex;
+}
+
+.palestra > .horario-inicio, .palestra > .descricao {
+	padding-bottom: 1rem;
+	padding-top: 1rem;
+}
+
+.palestra > .horario-inicio {
+	margin-right: 2em;
+}
+
+.palestra > .descricao {
+	border-bottom: 1px solid #dadada;
+	flex: 1;
+	font-size: 1.25em;
+}
+
+.evento {
+	color: #359c9c;
+}
+
+.nome {
+	color: #524947;
+}
+
+.palestra .duracao {
+	font-size: 0.75em;
+}
+
+.dialogo {
+	background-color: #f8f8f8;
+	box-shadow: 0 0px 0px 100vw rgba(0, 0, 0, 0.75);
+	display: none;
+	height: 100vh;
+	left: 0;
+	line-height: 1.25;
+	max-height: 600px;
+	max-width: 600px;
+	overflow-y: auto;
+	position: fixed;
+	top: 0;
+	width: 100vw;
+}
+
+.dialogo:target {
+	display: block;
+	z-index: 1;
+}
+
+.dialogo .fechar {
+	height: 24px;
+	position: absolute;
+	right: 2%;
+	top: 2%;
+	width: 24px;
+	z-index: 10;
+}
+
+.dialogo .fechar-icone {
+	color: red;
+}
+
+.dialogo > .nome {
+	font-size: 1.25em;
+	margin-top: 2.5em;
+}
+
+.dialogo .horario-inicio {
+	display: block;
+	padding-bottom: 1rem;
+}
+
+.palestrantes {
+	margin-top: 1rem;
+}
+
+.palestrante:first-child {
+	border-top: 1px solid #dadada;
+}
+
+.palestrante {
+	padding-bottom: 1rem;
+	padding-top: 1rem;
+}
+
+.palestrante .foto {
+	border-radius: 100%;
+	margin-right: 0.5em;
+}
+
+.palestrante .dados {
+	display: inline-block;
+	vertical-align: top;
+}
+
 .titulo {
 	color: #333333;
 	font-size: 1.5em;
@@ -126,4 +241,12 @@ body {
 
 .elo7 {
 	color: #fdb933;
+}
+
+@media (min-width: 600px) {
+	.palestra .dialogo {
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
 }

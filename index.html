@@ -18,6 +18,27 @@
 	<meta name='robots' content='index, follow'>
 	<meta name='theme-color' content=''>
 
+	<link rel=icon href='/imagens/favicons/favicon-16x16.png' sizes=16x16>
+	<link rel=icon href='/imagens/favicons/favicon-32x32.png' sizes=32x32>
+	<link rel=icon href='/imagens/favicons/favicon-48x48.png' sizes=48x48>
+	<link rel=icon href='/imagens/favicons/favicon-64x64.png' sizes=64x64>
+	<link rel=icon href='/imagens/favicons/favicon-96x96.png' sizes=96x96>
+	<link rel=icon href='/imagens/favicons/favicon-128x128.png' sizes=128x128>
+	<link rel=icon href='/imagens/favicons/favicon-160x160.png' sizes=160x160>
+	<link rel=icon href='/imagens/favicons/favicon-192x192.png' sizes=192x192>
+	<link rel=apple-touch-icon-precomposed sizes=180x180 href='/imagens/favicons/favicon-180x180.png'>
+	<link rel=apple-touch-icon-precomposed sizes=152x152 href='/imagens/favicons/favicon-152x152.png'>
+	<link rel=apple-touch-icon-precomposed sizes=144x144 href='/imagens/favicons/favicon-144x144.png'>
+	<link rel=apple-touch-icon-precomposed sizes=120x120 href='/imagens/favicons/favicon-120x120.png'>
+	<link rel=apple-touch-icon-precomposed sizes=114x114 href='/imagens/favicons/favicon-114x114.png'>
+	<link rel=apple-touch-icon-precomposed sizes=76x76 href='/imagens/favicons/favicon-76x76.png'>
+	<link rel=apple-touch-icon-precomposed sizes=72x72 href='/imagens/favicons/favicon-72x72.png'>
+	<link rel=apple-touch-icon-precomposed sizes=60x60 href='/imagens/favicons/favicon-60x60.png'>
+	<link rel=apple-touch-icon-precomposed sizes=57x57 href='/imagens/favicons/favicon-57x57.png'>
+	<link rel=apple-touch-icon-precomposed href='/imagens/favicons/favicon-precomposed.png'/>
+	<meta name=msapplication-TileColor content='#fdb933'>
+	<meta name=msapplication-TileImage content='/imagens/favicons/favicon-144x144.png'>
+
 	<meta property='og:type' content='website'>
 	<meta property='og:title' content='Software fora de série'>
 	<meta property='og:url' content=''>
@@ -27,7 +48,10 @@
 </head>
 <body itemscope itemtype='http://schema.org/Event'>
 	<header class='menu'>
-		<nav class='container'>
+		<nav class='cabecalho container'>
+			<svg width='48' height='20'>
+				<image xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href='//images.elo7.com.br/assets/v3/desktop/svg/logo-elo7.svg' src='//images.elo7.com.br/assets/v3/desktop/png/logo-elo7.png' width='48' height='20'></image>
+			</svg>
 			<ul>
 				<li class='secao-link'><a href='#evento'>O evento</a></li>
 				<li class='secao-link'><a href='#agenda'>Agenda</a></li>
@@ -40,6 +64,13 @@
 		<meta itemprop='startDate' content='2016-06-11T09:00'>
 		<time class='texto-chamada dia'>11 de Junho às <span class='horario'>9h00</span></time>
 		<address class='texto-chamada local'>Cubo - São Paulo</address>
+		<a href='https://software-fora-de-serie.typeform.com/to/cBdbZs' title='Inscreva-se para o evento Front7' class='inscricao' target='_blank' itemprop='offers' itemscope itemtype='http://schema.org/Offer'>
+			Inscreva-se
+			<meta itemprop='description' content='FREE'>
+			<meta itemprop='price' content='0'>
+			<meta itemprop='priceCurrency' content='BRL'>
+			<link itemprop='url' href='#'>
+		</a>
 		<a title='By Marcosleal (Own work) [CC BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0) or GFDL (http://www.gnu.org/copyleft/fdl.html)], via Wikimedia Commons' href='https://commons.wikimedia.org/wiki/File%3APonte_estaiada_Octavio_Frias_-_Sao_Paulo.jpg' class='licenca'>By Marcosleal (Own work)</a>
 	</section>
 	<section class='secao container' id='evento' itemprop='Organizer' itemscope itemtype='http://schema.org/Organization'>
@@ -48,19 +79,407 @@
 			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. <a href='http://www.elo7.com.br' title='Elo7 | Produtos fora de série' class='elo7' itemprop='url'><span itemprop='name'>Elo7</span></a>
 		</p>
 	</section>
-	<section class='secao container' id='agenda'>
-		<h2 class='titulo'>Agenda</h2>
+	<section class='secao' id='agenda'>
+		<h2 class='titulo container'>Agenda</h2>
+		<ol class='container'>
+			<li class='palestra'>
+				<time datetime='2016-06-11 09:00' class='horario-inicio'>09h00</time>
+				<div class='descricao'>
+					<h3 class='nome'>Abertura (coffee break)</h3>
+					<time datetime='PT15M' class='duracao'>15 minutos</time>
+				</div>
+			</li>
+			<li class='palestra'>
+				<time datetime='2016-06-11 09:15' class='horario-inicio'>09h15</time>
+				<div class='descricao'>
+					<h3 class='nome'>
+						<a href='#dialogo-keynote' class='evento'>Talk7 - Da concepção ao desenvolvendo de um aplicativo de mensagens</a>
+					</h3>
+					<time datetime='PT45M' class='duracao'>45 minutos</time>
+				</div>
+				<section class='dialogo' id='dialogo-keynote'>
+					<a href='#inicio' class='fechar'>
+						<svg viewBox='0 0 24 24' style='pointer-events: none; display: block; width: 100%; height: 100%;' class='fechar-icone'><g><path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'></path></g></svg>
+					</a>
+					<h3 class='nome container'>Talk7 - Da concepção ao desenvolvendo de um aplicativo de mensagens</h3>
+					<time datetime='2016-06-11 09:15' class='horario-inicio container'>09h15</time>
+					<p class='container'>
+						Uma descrição bem bonita Uma descrição bem bonita Uma descrição bem bonita Uma descrição bem bonita Uma descrição bem bonita Uma descrição bem bonita Uma descrição bem bonita
+					</p>
+					<ul class='palestrantes container'>
+						<li class='palestrante'>
+							<figure>
+								<img src='http://lorempixel.com/g/48/48/' alt='Carlos Curioni' class='foto'>
+								<figcaption class='dados'>
+									<h4 class='nome'>Carlos Curioni</h4>
+									<span>CEO</span>
+								</figcaption>
+							</figure>
+							<p>
+								Uma descrição bem legal sobre o palestrante Uma descrição bem legal sobre o palestrante Uma descrição bem legal sobre o palestrante Uma descrição bem legal sobre o palestrante Uma descrição bem legal sobre o palestrante Uma descrição bem legal sobre o palestrante
+							</p>
+						</li>
+						<li class='palestrante'>
+							<figure>
+								<img src='http://lorempixel.com/g/48/48/' alt='David Robert' class='foto'>
+								<figcaption class='dados'>
+									<h4 class='nome'>David Robert</h4>
+									<span>CTO</span>
+								</figcaption>
+							</figure>
+							<p>
+								Uma descrição bem legal sobre o palestrante Uma descrição bem legal sobre o palestrante Uma descrição bem legal sobre o palestrante Uma descrição bem legal sobre o palestrante Uma descrição bem legal sobre o palestrante Uma descrição bem legal sobre o palestrante
+							</p>
+						</li>
+					</ul>
+				</section>
+			</li>
+			<li class='palestra'>
+				<time datetime='2016-06-11 10:00' class='horario-inicio'>10h00</time>
+				<div class='descricao'>
+					<h3 class='nome'>
+						<a href='#dialogo-arquitetura' class='evento'>De feature a produto: Os desafios de um chat integrado ao checkout</a>
+					</h3>
+					<time datetime='PT45M' class='duracao'>45 minutos</time>
+				</div>
+				<section class='dialogo' id='dialogo-arquitetura'>
+					<a href='#inicio' class='fechar'>
+						<svg viewBox='0 0 24 24' style='pointer-events: none; display: block; width: 100%; height: 100%;' class='fechar-icone'><g><path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'></path></g></svg>
+					</a>
+					<h3 class='nome container'>De feature a produto: Os desafios de um chat integrado ao checkout</h3>
+					<time datetime='2016-06-11 10:00' class='horario-inicio container'>10h00</time>
+					<p class='container'>
+						A compra de um produto personalizado exige uma constante troca de informações entre comprador e vendedor. Nesta palestra mostraremos a evolução da arquitetura de sistemas do Elo7, e como incluir esse chat em nosso fluxo de checkout fez com que mudássemos completamente a maneira com que construimos nossos sistemas.
+					</p>
+					<ul class='palestrantes container'>
+						<li class='palestrante'>
+							<figure>
+								<img src='http://lorempixel.com/g/48/48/' alt='Mario Amaral' class='foto'>
+								<figcaption class='dados'>
+									<h4 class='nome'>Mario Amaral</h4>
+									<span>Back-end</span>
+								</figcaption>
+							</figure>
+							<p>
+								Bacharel em Sistemas de Informação pela USP e desenvolvedor Java desde 2004, focado em aplicações web para milhares de usuários. Engenheiro de software no Elo7, também escreveu um livro sobre certificação Java pela Casa do Código. Participante da comunidade Java, Mário atua em projetos comerciais e open source e palestrou em eventos como Conexão Java e o JavaOne.
+							</p>
+						</li>
+					</ul>
+				</section>
+			</li>
+			<li class='palestra'>
+				<time datetime='2016-06-11 10:45' class='horario-inicio'>10h45</time>
+				<div class='descricao'>
+					<h3 class='nome'>Intervalo (Coffe Break)</h3>
+					<time datetime='PT15M' class='duracao'>15 minutos</time>
+				</div>
+			</li>
+			<li class='palestra'>
+				<time datetime='2016-06-11 11:00' class='horario-inicio'>11h00</time>
+				<div class='descricao'>
+					<h3 class='nome'>
+						<a href='#dialogo-performance' class='evento'>Desafios de um backend de alta performance no Talk7</a>
+					</h3>
+					<time datetime='PT45M' class='duracao'>45 minutos</time>
+				</div>
+				<section class='dialogo' id='dialogo-performance'>
+					<a href='#inicio' class='fechar'>
+						<svg viewBox='0 0 24 24' style='pointer-events: none; display: block; width: 100%; height: 100%;' class='fechar-icone'><g><path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'></path></g></svg>
+					</a>
+					<h3 class='nome container'>Desafios de um backend de alta performance no Talk7</h3>
+					<time datetime='2016-06-11 11:00' class='horario-inicio container'>11h00</time>
+					<p class='container'>
+						Centenas de dúvidas e problemas surgem quando precisamos de Real Time em uma aplicação. Qual protocolo usar? Que tipos de frameworks são legais? É melhor fazer polling ou pulling de dados? E como a aplicação vai se comportar quando o sistema de Real Time estiver fora do ar? Como o usuário poderá receber notificações no browser e no aplicativo no celular? Essas e outras questões serão abordadas nessa palestra e veremos como o backend do Talk7 foi desenvolvido, visando alta performance, alta disponibilidade e facilidade de desenvolvimento.
+					</p>
+					<ul class='palestrantes container'>
+						<li class='palestrante'>
+							<figure>
+								<img src='http://lorempixel.com/g/48/48/' alt='Alexandre Gama' class='foto'>
+								<figcaption class='dados'>
+									<h4 class='nome'>Alexandre Gama</h4>
+									<span>Back-end</span>
+								</figcaption>
+							</figure>
+							<p>
+								Engenheiro de Software no Elo7 e Instrutor na Caelum. Passou por diversas empresas de grande porte, como Bolsa de Valores, Metrô, BicBando e Marisa mas se rendeu aos desafios do mundo das Startups. Gosta de uma boa discussão sobre boas práticas, sistemas críticos, DevOps e projetos open source.
+							</p>
+						</li>
+					</ul>
+				</section>
+			</li>
+			<li class='palestra'>
+				<time datetime='2016-06-11 11:45' class='horario-inicio'>11h45</time>
+				<div class='descricao'>
+					<h3 class='nome'>
+						<a href='#dialogo-aws' class='evento'>Automatizando a implantação e operação de aplicações conteinerizadas no AWS</a>
+					</h3>
+					<time datetime='PT45M' class='duracao'>45 minutos</time>
+				</div>
+				<section class='dialogo' id='dialogo-aws'>
+					<a href='#inicio' class='fechar'>
+						<svg viewBox='0 0 24 24' style='pointer-events: none; display: block; width: 100%; height: 100%;' class='fechar-icone'><g><path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'></path></g></svg>
+					</a>
+					<h3 class='nome container'>Automatizando a implantação e operação de aplicações conteinerizadas no AWS</h3>
+					<time datetime='2016-06-11 11:45' class='horario-inicio container'>11h45</time>
+					<p class='container'>
+						Nossa jornada no provisionamento de infra-estrutura automatizada partindo de scripts até soluções de orquestração de containers mantendo a escalabilidade e desempenho.
+					</p>
+					<ul class='palestrantes container'>
+						<li class='palestrante'>
+							<figure>
+								<img src='http://lorempixel.com/g/48/48/' alt='Rafael Monteiro' class='foto'>
+								<figcaption class='dados'>
+									<h4 class='nome'>Rafael Monteiro</h4>
+									<span>Devops</span>
+								</figcaption>
+							</figure>
+							<p>
+								Cientista da Computação e mestrando em Inteligência Artificial pelo Mackenzie. Entre as principais áreas de interesse se encontram-se High Performance Computing, Algoritmos e Inteligência Artificial. Atua como Engenheiro de Software, em sistemas que requerem baixa latência / alto desempenho e otimização de performance em softwares de missão critica.
+							</p>
+						</li>
+					</ul>
+				</section>
+			</li>
+			<li class='palestra'>
+				<time datetime='2016-06-11 12:30' class='horario-inicio'>12h30</time>
+				<div class='descricao'>
+					<h3 class='nome'>Almoço</h3>
+					<time datetime='PT1H' class='duracao'>60 minutos</time>
+				</div>
+			</li>
+			<li class='palestra'>
+				<time datetime='2016-06-11 13:30' class='horario-inicio'>13h30</time>
+				<div class='descricao'>
+					<h3 class='nome'>
+						<a href='#dialogo-ux' class='evento'>A influência dos usuários no desenvolvimento do Talk7</a>
+					</h3>
+					<time datetime='PT45M' class='duracao'>45 minutos</time>
+				</div>
+				<section class='dialogo' id='dialogo-ux'>
+					<a href='#inicio' class='fechar'>
+						<svg viewBox='0 0 24 24' style='pointer-events: none; display: block; width: 100%; height: 100%;' class='fechar-icone'><g><path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'></path></g></svg>
+					</a>
+					<h3 class='nome container'>A influência dos usuários no desenvolvimento do Talk7</h3>
+					<time datetime='2016-06-11 13:30' class='horario-inicio container'>13h30</time>
+					<p class='container'>
+						Uma descrição bem bonita Uma descrição bem bonita Uma descrição bem bonita Uma descrição bem bonita Uma descrição bem bonita Uma descrição bem bonita Uma descrição bem bonita
+					</p>
+					<ul class='palestrantes container'>
+						<li class='palestrante'>
+							<figure>
+								<img src='http://lorempixel.com/g/48/48/' alt='Fernanda Bernardo' class='foto'>
+								<figcaption class='dados'>
+									<h4 class='nome'>Fernanda Bernardo</h4>
+									<span>Front-end</span>
+								</figcaption>
+							</figure>
+							<p>
+								21 anos e trabalha como front-end no Elo7. Se formou em Sistemas de Informação na USP Leste e caiu na área de tecnologia meio que por sorte. Gosta tanto de back-end quanto de front-end e também de assuntos relacionados a UX. Adora palestrar e estudar assuntos novos. Gosta de assuntos relacionados à saúde, é diabética e tem um blog sobre o assunto. Apesar disso, adora doces.
+							</p>
+						</li>
+					</ul>
+				</section>
+			</li>
+			<li class='palestra'>
+				<time datetime='2016-06-11 14:15' class='horario-inicio'>14h15</time>
+				<div class='descricao'>
+					<h3 class='nome'>
+						<a href='#dialogo-front' class='evento'>Implementando realtime no frontend</a>
+					</h3>
+					<time datetime='PT45M' class='duracao'>45 minutos</time>
+				</div>
+				<section class='dialogo' id='dialogo-front'>
+					<a href='#inicio' class='fechar'>
+						<svg viewBox='0 0 24 24' style='pointer-events: none; display: block; width: 100%; height: 100%;' class='fechar-icone'><g><path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'></path></g></svg>
+					</a>
+					<h3 class='nome container'>Implementando realtime no frontend</h3>
+					<time datetime='2016-06-11 14:15' class='horario-inicio container'>14h15</time>
+					<p class='container'>
+						Uma descrição bem bonita Uma descrição bem bonita Uma descrição bem bonita Uma descrição bem bonita Uma descrição bem bonita Uma descrição bem bonita Uma descrição bem bonita
+					</p>
+					<ul class='palestrantes container'>
+						<li class='palestrante'>
+							<figure>
+								<img src='http://lorempixel.com/g/48/48/' alt='William Mizuta' class='foto'>
+								<figcaption class='dados'>
+									<h4 class='nome'>William Mizuta</h4>
+									<span>Front-end</span>
+								</figcaption>
+							</figure>
+							<p>
+								Uma descrição bem legal sobre o palestrante Uma descrição bem legal sobre o palestrante Uma descrição bem legal sobre o palestrante Uma descrição bem legal sobre o palestrante Uma descrição bem legal sobre o palestrante Uma descrição bem legal sobre o palestrante
+							</p>
+						</li>
+					</ul>
+				</section>
+			</li>
+			<li class='palestra'>
+				<time datetime='2016-06-11 15:00' class='horario-inicio'>15h00</time>
+				<div class='descricao'>
+					<h3 class='nome'>Intervalo (Coffe Break)</h3>
+					<time datetime='PT15M' class='duracao'>15 minutos</time>
+				</div>
+			</li>
+			<li class='palestra'>
+				<time datetime='2016-06-11 15:15' class='horario-inicio'>15h15</time>
+				<div class='descricao'>
+					<h3 class='nome'>
+						<a href='#dialogo-mobile' class='evento'>Desafio Mobile: Android e iOS caminhando juntos</a>
+					</h3>
+					<time datetime='PT1H' class='duracao'>60 minutos</time>
+				</div>
+				<section class='dialogo' id='dialogo-mobile'>
+					<a href='#inicio' class='fechar'>
+						<svg viewBox='0 0 24 24' style='pointer-events: none; display: block; width: 100%; height: 100%;' class='fechar-icone'><g><path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'></path></g></svg>
+					</a>
+					<h3 class='nome container'>Desafio Mobile: Android e iOS caminhando juntos</h3>
+					<time datetime='2016-06-11 15:15' class='horario-inicio container'>15h15</time>
+					<p class='container'>
+						Apesar de tecnologias diferentes, temos como desafio pensar Android e iOS como o mesmo ponto final, respeitando suas diferenças. Vamos mostrar como lidamos com a frente mobile e também nossas estratégias para manter a nossa qualidade e a robustez.
+					</p>
+					<ul class='palestrantes container'>
+						<li class='palestrante'>
+							<figure>
+								<img src='http://lorempixel.com/g/48/48/' alt='Rodrigo Sicarelli' class='foto'>
+								<figcaption class='dados'>
+									<h4 class='nome'>Rodrigo Sicarelli</h4>
+									<span>Mobile</span>
+								</figcaption>
+							</figure>
+							<p>
+								Engenheiro Mobile a 5 anos e passou por empresas como Walmart, ZAP Imóveis e Easy Taxi. Busca explorar a melhor solução na hora de criar um aplicativo: código, visual e estratégico.
+							</p>
+						</li>
+						<li class='palestrante'>
+							<figure>
+								<img src='http://lorempixel.com/g/48/48/' alt='Vitor Machado' class='foto'>
+								<figcaption class='dados'>
+									<h4 class='nome'>Vitor Machado</h4>
+									<span>Mobile</span>
+								</figcaption>
+							</figure>
+							<p>
+								Engenheiro de Software há 5 anos. Alternando entre startups e grandes consultorias, pode trabalhar com Netshoes, Extra, Schutz, Pão de Açúcar. Pedagogo em formação, acredita que performance e apresentação devem estar sempre aliadas.
+							</p>
+						</li>
+				</section>
+			</li>
+			<li class='palestra'>
+				<time datetime='2016-06-11 16:15' class='horario-inicio'>16h15</time>
+				<div class='descricao'>
+					<h3 class='nome'>Intervalo (Coffe Break)</h3>
+					<time datetime='PT15M' class='duracao'>15 minutos</time>
+				</div>
+			</li>
+			<li class='palestra'>
+				<time datetime='2016-06-11 16:30' class='horario-inicio'>16h30</time>
+				<div class='descricao'>
+					<h3 class='nome'>
+						<a href='#dialogo-elytics' class='evento'>Elytics Plataform - Big Data no Elo7 (Talk7)</a>
+					</h3>
+					<time datetime='PT45M' class='duracao'>45 minutos</time>
+				</div>
+				<section class='dialogo' id='dialogo-elytics'>
+					<a href='#inicio' class='fechar'>
+						<svg viewBox='0 0 24 24' style='pointer-events: none; display: block; width: 100%; height: 100%;' class='fechar-icone'><g><path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'></path></g></svg>
+					</a>
+					<h3 class='nome container'>Elytics Plataform - Big Data no Elo7 (Talk7)</h3>
+					<time datetime='2016-06-11 16:30' class='horario-inicio container'>16h30</time>
+					<p class='container'>
+						Nessa palestra vamos compartilhar a experiência adquirida ao construir uma arquitetura que utiliza Kafka como fonte de dados para o processamento de milhões de mensagens com Spark Streaming, persistência no Cassandra e utilizando o Zeppelin para a apresentação de dashboards estratégicos para o Elo7. ​Utilizando esta arquitetura, foi possível criar um ambiente para análise de dados de navegação do usuário pelo site, assim como métricas de venda e interação dos usuários via chat. Através dessa plataforma viabilizamos insights, validação de novas features e a possibilidade de aplicação de algoritmos preditivos que otimizem os objetivos de negócio.
+					</p>
+					<ul class='palestrantes container'>
+						<li class='palestrante'>
+							<figure>
+								<img src='http://lorempixel.com/g/48/48/' alt='Karina Moraes' class='foto'>
+								<figcaption class='dados'>
+									<h4 class='nome'>Karina Moraes</h4>
+									<span>Big data</span>
+								</figcaption>
+							</figure>
+							<p>
+								Formada em ciência da computação pela Universidade Cruzeiro do Sul, tem experiência em sustentação de sistemas e análise de negócios, trabalha com desenvolvimento de software há mais de 7 anos, sendo os 5 últimos em e-commerces. Integrante e líder do time de busca e data science do Elo7.
+							</p>
+						</li>
+						<li class='palestrante'>
+							<figure>
+								<img src='http://lorempixel.com/g/48/48/' alt='Tiago Vinicius' class='foto'>
+								<figcaption class='dados'>
+									<h4 class='nome'>Tiago Vinicius</h4>
+									<span>Big data</span>
+								</figcaption>
+							</figure>
+							<p>
+								Engenheiro de Software, formado em ciência da computação na Universidade Federal de Pernambuco e MBA em Big Data na FIAP. Integrante do time de busca e data science do Elo7.
+							</p>
+						</li>
+					</ul>
+				</section>
+			</li>
+			<li class='palestra'>
+				<time datetime='2016-06-11 17:15' class='horario-inicio'>17h15</time>
+				<div class='descricao'>
+					<h3 class='nome'>
+						<a href='#dialogo-times' class='evento'>Times de Alta Performance</a>
+					</h3>
+					<time datetime='PT45M' class='duracao'>45 minutos</time>
+				</div>
+				<section class='dialogo' id='dialogo-times'>
+					<a href='#inicio' class='fechar'>
+						<svg viewBox='0 0 24 24' style='pointer-events: none; display: block; width: 100%; height: 100%;' class='fechar-icone'><g><path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'></path></g></svg>
+					</a>
+					<h3 class='nome container'>Times de Alta Performance</h3>
+					<time datetime='2016-06-11 17:15' class='horario-inicio container'>17h15</time>
+					<p class='container'>
+						Os desafios de aumentar em 10 vezes o tamanho do engenharia mantendo a produtividade e um excelente ambiente de trabalho. Construindo times de alta performance pensando na constante evolução de cada integrantes
+					</p>
+					<ul class='palestrantes container'>
+						<li class='palestrante'>
+							<figure>
+								<img src='http://lorempixel.com/g/48/48/' alt='David Robert' class='foto'>
+								<figcaption class='dados'>
+									<h4 class='nome'>David Robert</h4>
+									<span>CTO</span>
+								</figcaption>
+							</figure>
+							<p>
+								Uma descrição bem legal sobre o palestrante Uma descrição bem legal sobre o palestrante Uma descrição bem legal sobre o palestrante Uma descrição bem legal sobre o palestrante Uma descrição bem legal sobre o palestrante Uma descrição bem legal sobre o palestrante
+							</p>
+						</li>
+					</ul>
+				</section>
+			</li>
+			<li class='palestra'>
+				<time datetime='2016-06-11 18:00' class='horario-inicio'>18h00</time>
+				<div class='descricao'>
+					<h3 class='nome'>Agradecimentos</h3>
+					<time datetime='PT15M' class='duracao'>15 minutos</time>
+				</div>
+			</li>
+			<li class='palestra'>
+				<time datetime='2016-06-11 18:30' class='horario-inicio'>18h30</time>
+				<div class='descricao'>
+					<h3 class='nome'>HH - Batendo papo com o time de tecnologia</h3>
+					<time datetime='PT3H30M' class='duracao'>3 horas e 30 minutos</time>
+				</div>
+			</li>
+		</ol>
 	</section>
 	<section class='secao' id='local' itemprop='location' itemscope itemtype='http://schema.org/Place'>
 		<meta itemprop='name' content='Elo7'>
 		<div class='container'>
 			<h2 class='titulo'>Local</h2>
 			<address class='endereco' itemprop='address' itemscope itemtype='http://schema.org/PostalAddress'>
-				<p class='descricao' itemprop='streetAddress'>Rua bla bla</p>
-				<p class='descricao'>Cidade - <span itemprop='addressLocality'>São Paulo</span> - <span itemprop='addressRegion'>SP</span> - CEP: <span itemprop='postalCode'>01001-000</span></p>
+				<p class='descricao' itemprop='streetAddress'>Rua Casa do Ator, 919</p>
+				<p class='descricao'>Cidade - <span itemprop='addressLocality'>São Paulo</span> - <span itemprop='addressRegion'>SP</span> - CEP: <span itemprop='postalCode'>04546-003</span></p>
 			</address>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.2722794069064!2d-46.69305858451137!3d-23.59456608466641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce57386891fef7%3A0xa560366583229e24!2sR.+Beira+Rio%2C+57+-+Centro%2C+S%C3%A3o+Paulo+-+SP%2C+04548-050!5e0!3m2!1spt-BR!2sbr!4v1455552052484" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen></iframe>
+			<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8827.034008493398!2d-46.68622500480567!3d-23.59856804642622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce574e7a73d30d%3A0x862a31742765a371!2sCUBO!5e0!3m2!1sen!2sbr!4v1464641921650' width='100%' height='350' frameborder='0' style='border:0; display: block; margin: 1em auto;' class='container' allowfullscreen></iframe>
 		</div>
 	</section>
+	<footer class='rodape'>
+		<div class='container'>
+			© 2016 Elo7
+		</div>
+	</footer>
 </body>
 </html>
