@@ -70,14 +70,15 @@
 			<meta itemprop='description' content='FREE'>
 			<meta itemprop='price' content='0'>
 			<meta itemprop='priceCurrency' content='BRL'>
-			<link itemprop='url' href='#'>
+			<link itemprop='url' href='https://software-fora-de-serie.typeform.com/to/cBdbZs'>
 		</a>
 	</section>
-	<section class='secao container' id='evento' itemprop='Organizer' itemscope itemtype='http://schema.org/Organization'>
+	<section class='secao container' id='evento'>
 		<h2 class='titulo'>O evento</h2>
-		<p class='descricao'>
-			O evento "Software Fora de Série" tem como propósito compartilhar conhecimento e inovação com as comunidades de desenvolvedores. É um evento voltado a líderes de equipes técnicas, arquitetos de software e desenvolvedores que influenciam a inovação em suas equipes. Com onze palestrantes, nove sessões e sete horas de palestras, este evento apresentará inovações e técnicas adotadas pela equipe de engenharia do <a href='http://www.elo7.com.br/' title='Elo7 | Produtos fora de série' itemprop='url' target='_blank'><span itemprop='name'>Elo7</span></a> durante o desenvolvimento do novo app de mensagens para vendedores <a href='http://www.talk7.com/' title='Talk7 - O App de Mensagens para Vendedores' itemprop='url' target='_blank'><span itemprop='name'>Talk7</span></a>.
+		<p class='descricao' itemprop='description'>
+			O evento "Software Fora de Série" tem como propósito compartilhar conhecimento e inovação com as comunidades de desenvolvedores. É um evento voltado a líderes de equipes técnicas, arquitetos de software e desenvolvedores que influenciam a inovação em suas equipes. Com onze palestrantes, nove sessões e sete horas de palestras, este evento apresentará inovações e técnicas adotadas pela equipe de engenharia do <a href='http://www.elo7.com.br/' title='Elo7 | Produtos fora de série' target='_blank'>Elo7</a> durante o desenvolvimento do novo app de mensagens para vendedores <a href='http://www.talk7.com/' title='Talk7 - O App de Mensagens para Vendedores' target='_blank'>Talk7</a>.
 		</p>
+		<link itemprop='url' href='/software-fora-de-serie'>
 	</section>
 	<section class='secao' id='agenda'>
 		<h2 class='titulo container'>Agenda</h2>
@@ -88,13 +89,19 @@
 					<h3 class='nome'>Credenciamento e Welcome Coffee</h3>
 				</div>
 			</li>
-			<li class='palestra'>
+			<li class='palestra' itemprop='subEvent' itemscope itemtype='http://schema.org/Event'>
 				<time datetime='2016-06-11 09:00' class='horario-inicio'>09h00</time>
+				<meta itemprop='startDate' content='2016-06-11 09:00'>
 				<div class='descricao'>
-					<h3 class='nome'>
-						<a href='#dialogo-keynote'>Talk7 - Da concepção ao desenvolvimento de um aplicativo de mensagens</a>
+					<h3 class='nome' itemprop='name'>
+						<a href='#dialogo-keynote' itemprop='url'>Talk7 - Da concepção ao desenvolvimento de um aplicativo de mensagens</a>
 					</h3>
-					<span class='area'>Produto e tecnologia</span>
+					<span class='area' itemprop='offers' itemscope itemtype='http://schema.org/Offer'>
+						Produto e tecnologia
+						<meta itemprop='description' content='FREE'>
+						<meta itemprop='price' content='0'>
+						<meta itemprop='priceCurrency' content='BRL'>
+					</span>
 				</div>
 				<section class='dialogo' id='dialogo-keynote'>
 					<a href='#inicio' class='fechar'>
@@ -102,47 +109,53 @@
 					</a>
 					<h3 class='nome container'>Talk7 - Da concepção ao desenvolvimento de um aplicativo de mensagens</h3>
 					<time datetime='2016-06-11 09:00' class='horario-inicio container'>09h00</time>
-					<p class='container'>
+					<p class='container' itemprop='description'>
 						Da concepção ao desenvolvimento de um aplicativo de mensagens, integrando os times de produto e engenharia
 					</p>
 					<ul class='palestrantes container'>
-						<li class='palestrante'>
+						<li class='palestrante' itemprop='performer' itemscope itemtype='http://schema.org/Person'>
 							<figure>
-								<img src='/imagens/palestrantes/Carlos.jpg' height=68 width=68 alt='Carlos Curioni' class='foto'>
+								<img src='/imagens/palestrantes/Carlos.jpg' height=68 width=68 alt='Carlos Curioni' class='foto' itemprop='image'>
 								<figcaption class='dados'>
-									<h4 class='nome'>Carlos Curioni</h4>
+									<h4 class='nome' itemprop='name' itemprop='name'>Carlos Curioni</h4>
 									<span>CEO</span>
 								</figcaption>
 							</figure>
-							<p>
+							<p itemprop='description'>
 								Bacharel em Engenharia de Produção pela Escola Politécnica da USP e MBA pela Universidade da Pensilvania, na Wharton School of Business. Trabalhou por 8 anos em consultoria na Accenture, no time de estratégia para clientes de varejo e bens de consumo. Posteriormente assumiu a diretoria de novos negócios no MercadoLivre, onde assumiu a Diretoria Reginal de Operações. Carlos atualmente é o CEO do Elo7.
 							</p>
 						</li>
-						<li class='palestrante'>
+						<li class='palestrante' itemprop='performer' itemscope itemtype='http://schema.org/Person'>
 							<figure>
-								<img src='/imagens/palestrantes/David.jpg' height=68 width=68 alt='David Robert' class='foto'>
+								<img src='/imagens/palestrantes/David.jpg' height=68 width=68 alt='David Robert' class='foto' itemprop='image'>
 								<figcaption class='dados'>
-									<h4 class='nome'>David Robert</h4>
+									<h4 class='nome' itemprop='name'>David Robert</h4>
 									<span>CTO</span>
 								</figcaption>
 							</figure>
-							<p>
+							<p itemprop='description'>
 								Mestre em Ciência da Computação pela USP com mais de 15 anos de experiência em pesquisa e desenvolvimento de software. Participando de projetos que incluem desde desenvolvimento de um servidor DNS em Java, compilador em C/C++, e até a arquitetura de um grande sistema distribuido em Ruby/Java.
 							</p>
-							<p>
+							<p itemprop='description'>
 								Possui excelentes conhecimentos em diferentes linguagens de programação e tecnologias, incluindo Java, Scala e C/C++. Atualmente é CTO no Elo7 liderando a aréa de engenharia com mais de 60 desenvolvedores.
 							</p>
 						</li>
 					</ul>
 				</section>
 			</li>
-			<li class='palestra'>
+			<li class='palestra' itemprop='subEvent' itemscope itemtype='http://schema.org/Event'>
 				<time datetime='2016-06-11 09:45' class='horario-inicio'>09h45</time>
+				<meta itemprop='startDate' content='2016-06-11 09:45'>
 				<div class='descricao'>
-					<h3 class='nome'>
-						<a href='#dialogo-arquitetura'>A arquitetura de um chat integrado ao checkout</a>
+					<h3 class='nome' itemprop='name'>
+						<a href='#dialogo-arquitetura' itemprop='url'>A arquitetura de um chat integrado ao checkout</a>
 					</h3>
-					<span class='area'>Arquitetura de software</span>
+					<span class='area' itemprop='offers' itemscope itemtype='http://schema.org/Offer'>
+						Arquitetura de software
+						<meta itemprop='description' content='FREE'>
+						<meta itemprop='price' content='0'>
+						<meta itemprop='priceCurrency' content='BRL'>
+					</span>
 				</div>
 				<section class='dialogo' id='dialogo-arquitetura'>
 					<a href='#inicio' class='fechar'>
@@ -150,19 +163,19 @@
 					</a>
 					<h3 class='nome container'>A arquitetura de um chat integrado ao checkout</h3>
 					<time datetime='2016-06-11 09:45' class='horario-inicio container'>09h45</time>
-					<p class='container'>
+					<p class='container' itemprop='description'>
 						A compra de um produto personalizado exige uma constante troca de informações entre comprador e vendedor. Nesta palestra mostraremos a evolução da arquitetura dos sistemas. Incluir um chat em fluxo de checkout fez com que mudássemos completamente a maneira com que construimos nossos sistemas desencadeando uma série de mudanças.
 					</p>
 					<ul class='palestrantes container'>
-						<li class='palestrante'>
+						<li class='palestrante' itemprop='performer' itemscope itemtype='http://schema.org/Person'>
 							<figure>
-								<img src='/imagens/palestrantes/Mario.jpg' height=68 width=68 alt='Mario Amaral' class='foto'>
+								<img src='/imagens/palestrantes/Mario.jpg' height=68 width=68 alt='Mario Amaral' class='foto' itemprop='image'>
 								<figcaption class='dados'>
-									<h4 class='nome'>Mario Amaral</h4>
+									<h4 class='nome' itemprop='name'>Mario Amaral</h4>
 									<span>Back-end</span>
 								</figcaption>
 							</figure>
-							<p>
+							<p itemprop='description'>
 								Bacharel em Sistemas de Informação pela USP e desenvolvedor Java desde 2004, focado em aplicações web para milhares de usuários. Engenheiro de Software, também escreveu um livro sobre certificação Java pela Casa do Código. Participante da comunidade Java, Mário atua em projetos comerciais e open source e palestrou em eventos como Conexão Java e o JavaOne.
 							</p>
 						</li>
@@ -175,13 +188,19 @@
 					<h3 class='nome'>Coffee break</h3>
 				</div>
 			</li>
-			<li class='palestra'>
+			<li class='palestra' itemprop='subEvent' itemscope itemtype='http://schema.org/Event'>
 				<time datetime='2016-06-11 10:45' class='horario-inicio'>10h45</time>
+				<meta itemprop='startDate' content='2016-06-11 10:45'>
 				<div class='descricao'>
-					<h3 class='nome'>
-						<a href='#dialogo-performance'>Back-end de extrema performance</a>
+					<h3 class='nome' itemprop='name'>
+						<a href='#dialogo-performance' itemprop='url'>Back-end de extrema performance</a>
 					</h3>
-					<span class='area'>Back-end</span>
+					<span class='area' itemprop='offers' itemscope itemtype='http://schema.org/Offer'>
+						Back-end
+						<meta itemprop='description' content='FREE'>
+						<meta itemprop='price' content='0'>
+						<meta itemprop='priceCurrency' content='BRL'>
+					</span>
 				</div>
 				<section class='dialogo' id='dialogo-performance'>
 					<a href='#inicio' class='fechar'>
@@ -189,35 +208,41 @@
 					</a>
 					<h3 class='nome container'>Back-end de extrema performance</h3>
 					<time datetime='2016-06-11 10:45' class='horario-inicio container'>10h45</time>
-					<p class='container'>
+					<p class='container' itemprop='description'>
 						Centenas de dúvidas e problemas surgem quando precisamos de Real Time em uma aplicação. Qual protocolo usar? Que tipos de frameworks são legais? É melhor fazer polling ou pulling de dados? E como a aplicação vai se comportar quando o sistema de Real Time estiver fora do ar? Como o usuário poderá receber notificações no browser e no aplicativo no celular?
 					</p>
 					<p class='container'>
 						Essas e outras questões serão abordadas nessa palestra e veremos como o backend do Talk7 foi desenvolvido, visando alta performance, alta disponibilidade e facilidade de desenvolvimento.
 					</p>
 					<ul class='palestrantes container'>
-						<li class='palestrante'>
+						<li class='palestrante' itemprop='performer' itemscope itemtype='http://schema.org/Person'>
 							<figure>
-								<img src='/imagens/palestrantes/Alexandre.jpg' height=68 width=68 alt='Alexandre Gama' class='foto'>
+								<img src='/imagens/palestrantes/Alexandre.jpg' height=68 width=68 alt='Alexandre Gama' class='foto' itemprop='image'>
 								<figcaption class='dados'>
-									<h4 class='nome'>Alexandre Gama</h4>
+									<h4 class='nome' itemprop='name'>Alexandre Gama</h4>
 									<span>Back-end</span>
 								</figcaption>
 							</figure>
-							<p>
+							<p itemprop='description'>
 								Engenheiro de Software no Elo7 e Instrutor na Caelum. Trabalhou em diversas empresas de grande porte, como Bolsa de Valores, Metrô, BicBando e Marisa mas se rendeu aos desafios do mundo das Startups. Gosta de uma boa discussão sobre boas práticas, sistemas críticos, DevOps e projetos open source.
 							</p>
 						</li>
 					</ul>
 				</section>
 			</li>
-			<li class='palestra'>
+			<li class='palestra' itemprop='subEvent' itemscope itemtype='http://schema.org/Event'>
 				<time datetime='2016-06-11 11:30' class='horario-inicio'>11h30</time>
+				<meta itemprop='startDate' content='2016-06-11 11:30'>
 				<div class='descricao'>
-					<h3 class='nome'>
-						<a href='#dialogo-aws'>Automatizando a implantação e operação de aplicações conteinerizadas no AWS</a>
+					<h3 class='nome' itemprop='name'>
+						<a href='#dialogo-aws' itemprop='url'>Automatizando a implantação e operação de aplicações conteinerizadas no AWS</a>
 					</h3>
-					<span class='area'>Devops</span>
+					<span class='area' itemprop='offers' itemscope itemtype='http://schema.org/Offer'>
+						Devops
+						<meta itemprop='description' content='FREE'>
+						<meta itemprop='price' content='0'>
+						<meta itemprop='priceCurrency' content='BRL'>
+					</span>
 				</div>
 				<section class='dialogo' id='dialogo-aws'>
 					<a href='#inicio' class='fechar'>
@@ -225,19 +250,19 @@
 					</a>
 					<h3 class='nome container'>Automatizando a implantação e operação de aplicações conteinerizadas no AWS</h3>
 					<time datetime='2016-06-11 11:30' class='horario-inicio container'>11h30</time>
-					<p class='container'>
+					<p class='container' itemprop='description'>
 						Gerir uma infraestrutura com mais de 150 servidores e que cresce rapidamente pode ser um grande obstáculo. Nesta palestra apresentaremos a jornada no provisionamento de infra-estrutura automatizada. Partindo de scripts até soluções de orquestração de containers, sempre evoluindo a escalabilidade, manutenabilidade e desempenho.
 					</p>
 					<ul class='palestrantes container'>
-						<li class='palestrante'>
+						<li class='palestrante' itemprop='performer' itemscope itemtype='http://schema.org/Person'>
 							<figure>
-								<img src='/imagens/palestrantes/Rafael.jpg' height=68 width=68 alt='Rafael Monteiro' class='foto'>
+								<img src='/imagens/palestrantes/Rafael.jpg' height=68 width=68 alt='Rafael Monteiro' class='foto' itemprop='image'>
 								<figcaption class='dados'>
-									<h4 class='nome'>Rafael Monteiro</h4>
+									<h4 class='nome' itemprop='name'>Rafael Monteiro</h4>
 									<span>Devops</span>
 								</figcaption>
 							</figure>
-							<p>
+							<p itemprop='description'>
 								Bacharel em Ciências da Computação e mestrando em Inteligência Artificial pelo Mackenzie. Engenheiro de Software, em sistemas que requerem baixa latência / alto desempenho e otimização de performance em softwares de missão critica. Entre as principais áreas de interesse se encontram-se high performance computing, algoritmos e inteligência artificial.
 							</p>
 						</li>
@@ -250,13 +275,19 @@
 					<h3 class='nome'>Almoço</h3>
 				</div>
 			</li>
-			<li class='palestra'>
+			<li class='palestra' itemprop='subEvent' itemscope itemtype='http://schema.org/Event'>
 				<time datetime='2016-06-11 13:15' class='horario-inicio'>13h15</time>
+				<meta itemprop='startDate' content='2016-06-11 13:15'>
 				<div class='descricao'>
-					<h3 class='nome'>
-						<a href='#dialogo-ux'>A influência dos usuários no desenvolvimento do Talk7</a>
+					<h3 class='nome' itemprop='name'>
+						<a href='#dialogo-ux' itemprop='url'>A influência dos usuários no desenvolvimento do Talk7</a>
 					</h3>
-					<span class='area'>Front-end e design</span>
+					<span class='area' itemprop='offers' itemscope itemtype='http://schema.org/Offer'>
+						Front-end e design
+						<meta itemprop='description' content='FREE'>
+						<meta itemprop='price' content='0'>
+						<meta itemprop='priceCurrency' content='BRL'>
+					</span>
 				</div>
 				<section class='dialogo' id='dialogo-ux'>
 					<a href='#inicio' class='fechar'>
@@ -264,32 +295,38 @@
 					</a>
 					<h3 class='nome container'>A influência dos usuários no desenvolvimento do Talk7</h3>
 					<time datetime='2016-06-11 13:15' class='horario-inicio container'>13h15</time>
-					<p class='container'>
+					<p class='container' itemprop='description'>
 						A experiência do usuário envolve várias etapas, entre elas pesquisas, testes, protótipos... Cada uma dessas etapas possui uma estrutura a ser seguida e necessitam de um planejamento antes mesmo de serem executados. Como é feito todo esse preparo? E depois, como os resultados impactam as áreas de tecnologia (front-end, back-end e mobile)? Como os times envolvidos se comportam diante de todo o fluxo de trabalho? Existe mesmo a rivalidade entre designers e devs?
 					</p>
 					<ul class='palestrantes container'>
-						<li class='palestrante'>
+						<li class='palestrante' itemprop='performer' itemscope itemtype='http://schema.org/Person'>
 							<figure>
-								<img src='/imagens/palestrantes/Fernanda.jpg' height=68 width=68 alt='Fernanda Bernardo' class='foto'>
+								<img src='/imagens/palestrantes/Fernanda.jpg' height=68 width=68 alt='Fernanda Bernardo' class='foto' itemprop='image'>
 								<figcaption class='dados'>
-									<h4 class='nome'>Fernanda Bernardo</h4>
+									<h4 class='nome' itemprop='name'>Fernanda Bernardo</h4>
 									<span>Front-end</span>
 								</figcaption>
 							</figure>
-							<p>
+							<p itemprop='description'>
 								Bacharel em Sistemas de Informação na USP Leste. Engenheira de Software integrante do time de front-end, caiu na área de tecnologia meio que por sorte. Gosta tanto de back-end quanto de front-end e também de assuntos relacionados a UX.
 							</p>
 						</li>
 					</ul>
 				</section>
 			</li>
-			<li class='palestra'>
+			<li class='palestra' itemprop='subEvent' itemscope itemtype='http://schema.org/Event'>
 				<time datetime='2016-06-11 14:00' class='horario-inicio'>14h00</time>
+				<meta itemprop='startDate' content='2016-06-11 14:00'>
 				<div class='descricao'>
-					<h3 class='nome'>
-						<a href='#dialogo-front'>Implementando realtime no front-end</a>
+					<h3 class='nome' itemprop='name'>
+						<a href='#dialogo-front' itemprop='url'>Implementando realtime no front-end</a>
 					</h3>
-					<span class='area'>Front-end</span>
+					<span class='area' itemprop='offers' itemscope itemtype='http://schema.org/Offer'>
+						Front-end
+						<meta itemprop='description' content='FREE'>
+						<meta itemprop='price' content='0'>
+						<meta itemprop='priceCurrency' content='BRL'>
+					</span>
 				</div>
 				<section class='dialogo' id='dialogo-front'>
 					<a href='#inicio' class='fechar'>
@@ -297,19 +334,19 @@
 					</a>
 					<h3 class='nome container'>Implementando realtime no front-end</h3>
 					<time datetime='2016-06-11 14:00' class='horario-inicio container'>14h00</time>
-					<p class='container'>
+					<p class='container' itemprop='description'>
 						Adicionar elementos de single page application numa arquitetura baseada em multi page application sem esquecer da performance, SEO e dos browsers mais antigos é um desafio para muitos. Nessa palestra, mostraremos como a filosofia do progressive enhancement ajudou a definir a nossa arquitetura de real time no front-end.
 					</p>
 					<ul class='palestrantes container'>
-						<li class='palestrante'>
+						<li class='palestrante' itemprop='performer' itemscope itemtype='http://schema.org/Person'>
 							<figure>
-								<img src='/imagens/palestrantes/William.jpg' height=68 width=68 alt='William Mizuta' class='foto'>
+								<img src='/imagens/palestrantes/William.jpg' height=68 width=68 alt='William Mizuta' class='foto' itemprop='image'>
 								<figcaption class='dados'>
-									<h4 class='nome'>William Mizuta</h4>
+									<h4 class='nome' itemprop='name'>William Mizuta</h4>
 									<span>Front-end</span>
 								</figcaption>
 							</figure>
-							<p>
+							<p itemprop='description'>
 								Engenheiro de Software no Elo7 e instrutor na Caelum formado em Ciências Moleculares pela USP. Líder do time de front-end, tem interesse em estudar em arquitetura de software e em como deixar o código de forma mais organizada possível. Também tem interesse em back-end e agilidade.
 							</p>
 						</li>
@@ -322,13 +359,19 @@
 					<h3 class='nome'>Coffee break</h3>
 				</div>
 			</li>
-			<li class='palestra'>
+			<li class='palestra' itemprop='subEvent' itemscope itemtype='http://schema.org/Event'>
 				<time datetime='2016-06-11 15:00' class='horario-inicio'>15h00</time>
+				<meta itemprop='startDate' content='2016-06-11 15:00'>
 				<div class='descricao'>
-					<h3 class='nome'>
-						<a href='#dialogo-mobile'>Desenvolvimento Mobile: Android e iOS caminhando juntos</a>
+					<h3 class='nome' itemprop='name'>
+						<a href='#dialogo-mobile' itemprop='url'>Desenvolvimento Mobile: Android e iOS caminhando juntos</a>
 					</h3>
-					<span class='area'>Android e iOS</span>
+					<span class='area' itemprop='offers' itemscope itemtype='http://schema.org/Offer'>
+						Android e iOS
+						<meta itemprop='description' content='FREE'>
+						<meta itemprop='price' content='0'>
+						<meta itemprop='priceCurrency' content='BRL'>
+					</span>
 				</div>
 				<section class='dialogo' id='dialogo-mobile'>
 					<a href='#inicio' class='fechar'>
@@ -336,31 +379,31 @@
 					</a>
 					<h3 class='nome container'>Desenvolvimento Mobile: Android e iOS caminhando juntos</h3>
 					<time datetime='2016-06-11 15:00' class='horario-inicio container'>15h00</time>
-					<p class='container'>
+					<p class='container' itemprop='description'>
 						Apesar de tecnologias diferentes, temos como desafio pensar nas versões Android e iOS como sendo um mesmo produto. Vamos demonstrar como lidamos com a arquitetura mobile e as estratégias para manter a qualidade, manutenabilidade e a robustez em ambas as plataformas.
 					</p>
 					<ul class='palestrantes container'>
-						<li class='palestrante'>
+						<li class='palestrante' itemprop='performer' itemscope itemtype='http://schema.org/Person'>
 							<figure>
-								<img src='/imagens/palestrantes/Rodrigo.jpg' height=68 width=68 alt='Rodrigo Sicarelli' class='foto'>
+								<img src='/imagens/palestrantes/Rodrigo.jpg' height=68 width=68 alt='Rodrigo Sicarelli' class='foto' itemprop='image'>
 								<figcaption class='dados'>
-									<h4 class='nome'>Rodrigo Sicarelli</h4>
+									<h4 class='nome' itemprop='name'>Rodrigo Sicarelli</h4>
 									<span>Mobile</span>
 								</figcaption>
 							</figure>
-							<p>
+							<p itemprop='description'>
 								Engenheiro Mobile há 5 anos. Fez parte de empresas como Walmart, ZAP Imóveis e Easy Taxi. Busca explorar a melhor solução na hora de criar um aplicativo: código, visual e estratégico.
 							</p>
 						</li>
-						<li class='palestrante'>
+						<li class='palestrante' itemprop='performer' itemscope itemtype='http://schema.org/Person'>
 							<figure>
-								<img src='/imagens/palestrantes/Vitor.jpg' height=68 width=68 alt='Vitor Machado' class='foto'>
+								<img src='/imagens/palestrantes/Vitor.jpg' height=68 width=68 alt='Vitor Machado' class='foto' itemprop='image'>
 								<figcaption class='dados'>
-									<h4 class='nome'>Vitor Machado</h4>
+									<h4 class='nome' itemprop='name'>Vitor Machado</h4>
 									<span>Mobile</span>
 								</figcaption>
 							</figure>
-							<p>
+							<p itemprop='description'>
 								Engenheiro de Software há 5 anos. Alternando entre startups e grandes consultorias, fez trabalhos para grandes empresas como Netshoes, Extra, Schutz e Pão de Açúcar. Pedagogo de formação, acredita que performance e apresentação devem estar sempre aliadas.
 							</p>
 						</li>
@@ -372,13 +415,19 @@
 					<h3 class='nome'>Coffee break</h3>
 				</div>
 			</li>
-			<li class='palestra'>
+			<li class='palestra' itemprop='subEvent' itemscope itemtype='http://schema.org/Event'>
 				<time datetime='2016-06-11 16:15' class='horario-inicio'>16h15</time>
+				<meta itemprop='startDate' content='2016-06-11 16:15'>
 				<div class='descricao'>
-					<h3 class='nome'>
-						<a href='#dialogo-elytics'>Elytics - Construindo uma plataforma de Big Data</a>
+					<h3 class='nome' itemprop='name'>
+						<a href='#dialogo-elytics' itemprop='url'>Elytics - Construindo uma plataforma de Big Data</a>
 					</h3>
-					<span class='area'>Big data</span>
+					<span class='area' itemprop='offers' itemscope itemtype='http://schema.org/Offer'>
+						Big data
+						<meta itemprop='description' content='FREE'>
+						<meta itemprop='price' content='0'>
+						<meta itemprop='priceCurrency' content='BRL'>
+					</span>
 				</div>
 				<section class='dialogo' id='dialogo-elytics'>
 					<a href='#inicio' class='fechar'>
@@ -386,47 +435,53 @@
 					</a>
 					<h3 class='nome container'>Elytics Plataform - Big Data no Elo7 (Talk7)</h3>
 					<time datetime='2016-06-11 16:15' class='horario-inicio container'>16h15</time>
-					<p class='container'>
+					<p class='container' itemprop='description'>
 						Temos a necessidade de processar e analisar milhões de dados. Nessa palestra vamos compartilhar a experiência adquirida ao construir uma arquitetura que utiliza Kafka como fonte de dados para o processamento de milhões de mensagens com Spark Streaming, persistência no Cassandra e utilizando o Zeppelin para a apresentação de dashboards estratégicos para o negócio.
 					</p>
 					<p class='container'>
 ​						Utilizando esta arquitetura, foi possível criar um ambiente para análise de dados de navegação do usuário pelo site, assim como métricas de venda e interação dos usuários via chat. Através dessa plataforma viabilizamos insights, validação de novas features e a possibilidade de aplicação de algoritmos preditivos que otimizem os objetivos de negócio.
 					</p>
 					<ul class='palestrantes container'>
-						<li class='palestrante'>
+						<li class='palestrante' itemprop='performer' itemscope itemtype='http://schema.org/Person'>
 							<figure>
-								<img src='/imagens/palestrantes/Karina.jpg' height=68 width=68 alt='Karina Moraes' class='foto'>
+								<img src='/imagens/palestrantes/Karina.jpg' height=68 width=68 alt='Karina Moraes' class='foto' itemprop='image'>
 								<figcaption class='dados'>
-									<h4 class='nome'>Karina Moraes</h4>
+									<h4 class='nome' itemprop='name'>Karina Moraes</h4>
 									<span>Big data</span>
 								</figcaption>
 							</figure>
-							<p>
+							<p itemprop='description'>
 								Bacharel em Ciências da Computação pela Universidade Cruzeiro do Sul. Engenheira de Software há 7 anos, com experiência em sustentação de sistemas e análise de negócios, integrante e líder do time de busca e data science.
 							</p>
 						</li>
-						<li class='palestrante'>
+						<li class='palestrante' itemprop='performer' itemscope itemtype='http://schema.org/Person'>
 							<figure>
-								<img src='/imagens/palestrantes/Tiago.jpg' height=68 width=68 alt='Tiago Vinicius' class='foto'>
+								<img src='/imagens/palestrantes/Tiago.jpg' height=68 width=68 alt='Tiago Vinicius' class='foto' itemprop='image'>
 								<figcaption class='dados'>
-									<h4 class='nome'>Tiago Vinicius</h4>
+									<h4 class='nome' itemprop='name'>Tiago Vinicius</h4>
 									<span>Big data</span>
 								</figcaption>
 							</figure>
-							<p>
+							<p itemprop='description'>
 								Bacharel em Ciências da Computação pela Universidade Federal de Pernambuco e MBA em Big Data pela FIAP. Engenheiro de Software integrante do time de busca e data science.
 							</p>
 						</li>
 					</ul>
 				</section>
 			</li>
-			<li class='palestra'>
+			<li class='palestra' itemprop='subEvent' itemscope itemtype='http://schema.org/Event'>
 				<time datetime='2016-06-11 17:00' class='horario-inicio'>17h00</time>
+				<meta itemprop='startDate' content='2016-06-11 17:00'>
 				<div class='descricao'>
-					<h3 class='nome'>
-						<a href='#dialogo-times'>Times de Alta Performance</a>
+					<h3 class='nome' itemprop='name'>
+						<a href='#dialogo-times' itemprop='url'>Times de Alta Performance</a>
 					</h3>
-					<span class='area'>Agilidade</span>
+					<span class='area' itemprop='offers' itemscope itemtype='http://schema.org/Offer'>
+						Agilidade
+						<meta itemprop='description' content='FREE'>
+						<meta itemprop='price' content='0'>
+						<meta itemprop='priceCurrency' content='BRL'>
+					</span>
 				</div>
 				<section class='dialogo' id='dialogo-times'>
 					<a href='#inicio' class='fechar'>
@@ -434,22 +489,22 @@
 					</a>
 					<h3 class='nome container'>Times de Alta Performance</h3>
 					<time datetime='2016-06-11 17:00' class='horario-inicio container'>17h00</time>
-					<p class='container'>
+					<p class='container' itemprop='description'>
 						Os desafios de crescer em mais de 10 vezes o tamanho dos times da engenharia mantendo a produtividade e um excelente ambiente de trabalho. Como montamos  times de alta performance pensando na constante evolução de cada um de seus integrantes e na constante evolução da empresa.
 					</p>
 					<ul class='palestrantes container'>
-						<li class='palestrante'>
+						<li class='palestrante' itemprop='performer' itemscope itemtype='http://schema.org/Person'>
 							<figure>
-								<img src='/imagens/palestrantes/David.jpg' height=68 width=68 alt='David Robert' class='foto'>
+								<img src='/imagens/palestrantes/David.jpg' height=68 width=68 alt='David Robert' class='foto' itemprop='image'>
 								<figcaption class='dados'>
-									<h4 class='nome'>David Robert</h4>
+									<h4 class='nome' itemprop='name'>David Robert</h4>
 									<span>CTO</span>
 								</figcaption>
 							</figure>
-							<p>
+							<p itemprop='description'>
 								Mestre em Ciência da Computação pela USP com mais de 15 anos de experiência em pesquisa e desenvolvimento de software. Participando de projetos que incluem desde desenvolvimento de um servidor DNS em Java, compilador em C/C++, e até a arquitetura de um grande sistema distribuido em Ruby/Java.
 							</p>
-							<p>
+							<p itemprop='description'>
 								Possui excelentes conhecimentos em diferentes linguagens de programação e tecnologias, incluindo Java, Scala e C/C++. Atualmente é CTO no Elo7 liderando a aréa de engenharia com mais de 60 desenvolvedores.
 							</p>
 						</li>
@@ -466,7 +521,12 @@
 				<time datetime='2016-06-11 18:15' class='horario-inicio'>18h15</time>
 				<div class='descricao'>
 					<h3 class='nome'>HH - Batendo papo com o time de tecnologia</h3>
-					<span class='area'>Cerveja por nossa conta</span>
+					<span class='area' itemprop='offers' itemscope itemtype='http://schema.org/Offer'>
+						Cerveja por nossa conta
+						<meta itemprop='description' content='FREE'>
+						<meta itemprop='price' content='0'>
+						<meta itemprop='priceCurrency' content='BRL'>
+					</span>
 				</div>
 			</li>
 		</ol>
