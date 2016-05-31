@@ -129,8 +129,8 @@ p + p {
 }
 
 .secao {
-	padding-bottom: 1em;
-	padding-top: 1em;
+	padding-bottom: 2.5em;
+	padding-top: 2.5em;
 }
 
 #agenda {
@@ -239,7 +239,7 @@ p + p {
 .titulo {
 	color: #333333;
 	font-size: 1.5em;
-	margin-bottom: 0.5em;
+	margin-bottom: 1em;
 }
 
 .descricao {
