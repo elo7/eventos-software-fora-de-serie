@@ -246,6 +246,23 @@ p + p {
 	line-height: 1.5;
 }
 
+.mapa {
+	display: none;
+	margin: 1em auto;
+}
+
+.mapa.visivel {
+	display: block;
+}
+
+.mapa iframe {
+	pointer-events: none;
+}
+
+.mapa.selecionado iframe {
+	pointer-events: auto;
+}
+
 .elo7 {
 	color: #fdb933;
 }
