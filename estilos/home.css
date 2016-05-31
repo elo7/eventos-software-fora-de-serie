@@ -25,6 +25,10 @@ body {
 	font-weight: 300;
 }
 
+a {
+	color: #359c9c;
+}
+
 p + p {
 	margin-top: 1em;
 }
@@ -36,7 +40,6 @@ p + p {
 
 .menu {
 	border-top: 2px solid #fdb933;
-	color: #359c9c;
 	overflow: auto;
 }
 
@@ -135,7 +138,7 @@ p + p {
 }
 
 .palestra {
-	align-items: center;
+	align-items: baseline;
 	display: flex;
 }
 
@@ -154,15 +157,15 @@ p + p {
 	font-size: 1.25em;
 }
 
-.evento {
-	color: #359c9c;
+.palestra:last-child > .descricao {
+	border: none;
 }
 
 .nome {
 	color: #524947;
 }
 
-.palestra .duracao {
+.palestra .area {
 	font-size: 0.75em;
 }
 
@@ -200,6 +203,7 @@ p + p {
 }
 
 .dialogo > .nome {
+	color: #C83E27;
 	font-size: 1.25em;
 	margin-top: 2.5em;
 }

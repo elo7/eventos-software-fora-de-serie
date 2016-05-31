@@ -5,7 +5,7 @@
   "scripts": {
     "build:css": "find estilos/css -name '*.css' | xargs postcss --use autoprefixer --autoprefixer.browsers 'last 2 versions, > 5%, ie >= 9' --replace",
     "postbuild:css": "find estilos -name '*.css' | xargs -Ifile cleancss -o file file",
-    "build:html": "htmlminify index.html -o index.html",
+    "build:html": "htmlminify software-fora-de-serie/index.html -o software-fora-de-serie/index.html",
     "deploy": "npm run build:css && npm run build:html"
   },
   "author": "Elo7",
