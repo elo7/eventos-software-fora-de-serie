@@ -72,10 +72,10 @@ p + p {
 	color: #F7F4F0;
 	font-size: 1.75em;
 	text-align: center;
-	padding-bottom: 1.5em;
-	padding-top: 1.5em;
+	padding-bottom: 5em;
+	padding-top: 5em;
 	position: relative;
-	text-shadow: 1px 1px 1px #333333;
+	text-shadow: 2px 2px 1px #333333;
 	text-transform: uppercase;
 }
 
@@ -102,8 +102,6 @@ p + p {
 	border-radius: 5em;
 	color: #F7F4F0;
 	display: block;
-	font-size: 0.5em;
-	font-weight: 300;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 2.5em;
