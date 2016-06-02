@@ -299,7 +299,6 @@ h1 {
 	width: 50%;
 }
 
-.ctos .dados {
-	margin-bottom: 0.75em;
-	margin-top: 0.75em;
+.ctos .nome a {
+	color: #524947;
 }
