@@ -226,14 +226,14 @@ h1 {
 }
 
 .palestrantes {
+	border-top: 1px solid #dadada;
+	display: flex;
+	flex-wrap: wrap;
 	margin-top: 1rem;
 }
 
-.palestrante:first-child {
-	border-top: 1px solid #dadada;
-}
-
 .palestrante {
+	min-width: 50%;
 	padding-bottom: 1rem;
 	padding-top: 1rem;
 }
@@ -285,4 +285,21 @@ h1 {
 		top: 50%;
 		transform: translate(-50%, -50%);
 	}
+}
+
+.empresa {
+	display: block;
+}
+
+.ctos .foto {
+	float: left;
+}
+
+.ctos .palestrante {
+	width: 50%;
+}
+
+.ctos .dados {
+	margin-bottom: 0.75em;
+	margin-top: 0.75em;
 }
