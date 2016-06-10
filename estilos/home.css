@@ -103,7 +103,7 @@ h1 {
 	margin-top: 1.5rem;
 }
 
-.horario {
+.horario-evento {
 	text-transform: lowercase;
 }
 
@@ -149,35 +149,44 @@ h1 {
 	background-color: #f8f8f8;
 }
 
-.palestra {
+.horario {
 	align-items: baseline;
 	display: flex;
 }
 
-.palestra > .horario-inicio, .palestra > .descricao {
+.horario > .horario-inicio, .horario > .descricao {
 	padding-bottom: 1rem;
 	padding-top: 1rem;
 }
 
-.palestra > .horario-inicio {
+.horario .horario-inicio {
 	margin-right: 2em;
 }
 
-.palestra > .descricao {
+.horario > .descricao {
 	border-bottom: 1px solid #dadada;
 	flex: 1;
 	font-size: 1.25em;
 }
 
-.palestra:last-child > .descricao {
+.horario:last-child > .descricao {
 	border: none;
+}
+
+.palestra {
+	line-height: 1;
+	margin-bottom: 1.5em;
+}
+
+.palestra:last-child {
+	margin-bottom: 0;
 }
 
 .nome {
 	color: #524947;
 }
 
-.palestra .area {
+.horario .area {
 	font-size: 0.75em;
 }
 
@@ -185,6 +194,7 @@ h1 {
 	background-color: #f8f8f8;
 	box-shadow: 0 0px 0px 100vw rgba(0, 0, 0, 0.75);
 	display: none;
+	font-size: 1rem;
 	height: 100vh;
 	left: 0;
 	line-height: 1.25;
@@ -280,7 +290,7 @@ h1 {
 }
 
 @media (min-width: 600px) {
-	.palestra .dialogo {
+	.horario .dialogo {
 		left: 50%;
 		top: 50%;
 		transform: translate(-50%, -50%);
